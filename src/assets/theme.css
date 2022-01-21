@@ -1,0 +1,28 @@
+.category-section
+{
+    background: #fff1de;
+}
+.cat-section {
+    margin-top: 30px;
+}
+.cat-section {
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.cat-section a {
+    transition: transform .4s;
+    transition: opacity 0.35s, transform 0.35s;
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease-out, -webkit-transform 0.7s ease-in-out;
+}
+.cat-section img {
+    transition: all 0.5s;
+}
+.cat-section a:hover {
+    height: 100%;
+    width: 100%;
+    display: block;
+    transform: scale(1.1);
+}

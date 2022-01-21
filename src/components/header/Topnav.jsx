@@ -2,11 +2,10 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ListGroup from "react-bootstrap/ListGroup";
 
 const Topnav = () => {
   return (
-    <div className="topbar-main">
+    <div className="topbar-main d-none d-lg-block">
       <Container className="custom-container">
         <Row>
           <Col md={5}>

@@ -2,12 +2,21 @@ import Header from './components/header/Header';
 import Topnav from './components/header/Topnav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Slider from './components/slider/Slider';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Category from './components/home_views/Category';
+import Testimonial from './components/home_views/Testimonial';
+
+
 function App() {
   return (
     <div>    
     <Router>
       <Topnav></Topnav>
       <Header></Header>
+      <Slider></Slider>
+      <Category></Category>
+      <Testimonial></Testimonial>
       </Router>
     </div>
   );
