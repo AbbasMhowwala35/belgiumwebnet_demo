@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Slider from './components/slider/Slider';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Category from './components/home_views/Category';
-import Testimonial from './components/home_views/Testimonial';
+import { Testimonial } from './components/home_views/Testimonial';
+import Insta from './components/home_views/Insta';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Slider></Slider>
       <Category></Category>
       <Testimonial></Testimonial>
+      <Insta></Insta>
       </Router>
     </div>
   );
