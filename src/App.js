@@ -7,6 +7,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Category from './components/home_views/Category';
 import { Testimonial } from './components/home_views/Testimonial';
 import Insta from './components/home_views/Insta';
+import Newsletter from './components/home_views/Newsletter';
+import Footer from './components/slider/footer/Footer';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Category></Category>
       <Testimonial></Testimonial>
       <Insta></Insta>
+      <Newsletter></Newsletter>
+      <Footer></Footer>
       </Router>
     </div>
   );

@@ -27,7 +27,44 @@ const Insta = () => {
             </div>
           </Col>
           <Col md={8}>
-            <div class="elfsight-app-10a9fda0-971c-4226-881b-5a4d591d7b0b"></div>
+          <Row>
+              <Col md={4} className="no-padding">
+                  <img
+                    src="https://baladna.belgiumwebnet.com/assets/images/insta.png"
+                    alt="Instagram Image" className="insta-child"
+                  ></img>
+              </Col>
+              <Col md={4} className="no-padding">
+                  <img
+                    src="https://baladna.belgiumwebnet.com/assets/images/insta.png"
+                    alt="Instagram Image" className="insta-child"
+                  ></img>
+              </Col>
+              <Col md={4} className="no-padding">
+                  <img
+                    src="https://baladna.belgiumwebnet.com/assets/images/insta.png"
+                    alt="Instagram Image" className="insta-child"
+                  ></img>
+              </Col>
+              <Col md={4} className="no-padding">
+                  <img
+                    src="https://baladna.belgiumwebnet.com/assets/images/insta.png"
+                    alt="Instagram Image" className="insta-child"
+                  ></img>
+              </Col>
+              <Col md={4} className="no-padding">
+                  <img
+                    src="https://baladna.belgiumwebnet.com/assets/images/insta.png"
+                    alt="Instagram Image" className="insta-child"
+                  ></img>
+              </Col>
+              <Col md={4} className="no-padding">
+                  <img
+                    src="https://baladna.belgiumwebnet.com/assets/images/insta.png"
+                    alt="Instagram Image" className="insta-child"
+                  ></img>
+              </Col>
+          </Row>
           </Col>
         </Row>
       </Container>
