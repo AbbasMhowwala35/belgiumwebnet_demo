@@ -162,18 +162,18 @@ const Footer = () => {
                   <a href="https://twitter.com/baladnajewelry" target="_blank">
                     <img
                       src="https://baladna.belgiumwebnet.com/assets/images/headerimg/twitter.svg"
-                      class="social-icon"
+                      className="social-icon"
                       alt="Twitter"
                     ></img>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="copyright">
+            <div className="copyright">
               <h5>
                 <a href="javascript:void(0);">Copyright Baldna © 2022</a>
               </h5>
-              <ul class="links-ul">
+              <ul className="links-ul">
                 <li>
                   <a href="https://baladna.belgiumwebnet.com/privacy-policy">
                     Privacy policy |
@@ -243,13 +243,13 @@ const Footer = () => {
             </div>
           </Col>
           <Col md={4} className="float-right">
-            <div class="certificate">
-              <ul class="certificate-ul text-right">
+            <div className="certificate">
+              <ul className="certificate-ul text-right">
                 <li>
                   <a href="javascript:void(0);">
                     <img
                       src="https://baladna.belgiumwebnet.com/assets/images/payment/visa.svg"
-                      class="payment-image"
+                      className="payment-image"
                       alt="Payment"
                     ></img>
                   </a>
@@ -258,7 +258,7 @@ const Footer = () => {
                   <a href="javascript:void(0);">
                     <img
                       src="https://baladna.belgiumwebnet.com/assets/images/payment/master_card.svg"
-                      class="payment-image"
+                      className="payment-image"
                       alt="Payment"
                     ></img>
                   </a>
@@ -267,7 +267,7 @@ const Footer = () => {
                   <a href="javascript:void(0);">
                     <img
                       src="https://baladna.belgiumwebnet.com/assets/images/payment/paypal.svg"
-                      class="payment-image"
+                      className="payment-image"
                       alt="Payment"
                     ></img>
                   </a>
@@ -276,7 +276,7 @@ const Footer = () => {
                   <a href="javascript:void(0);">
                     <img
                       src="https://baladna.belgiumwebnet.com/assets/images/payment/american_express.svg"
-                      class="payment-image"
+                      className="payment-image"
                       alt="Payment"
                     ></img>
                   </a>

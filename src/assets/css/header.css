@@ -1,7 +1,7 @@
 .topbar-main {
   background: #f3e1c6;
   color: #000;
-  padding: 12px 0px;
+  padding: 5px 0px;
 }
 ul.list-inline-block li {
   display: inline-block;
@@ -31,7 +31,7 @@ nav.bj_header a.navbar-brand img {
 ul.list-inline-block.pull-right {
   float: right;
 }
-.bj_header a.nav-link {
+.bj_header .top_menu {
   color: #000 !important;
   font-weight: 600;
   font-size: 16px;
@@ -62,8 +62,10 @@ ul.list-inline-block.pull-right {
 {
     list-style-type: none;
     display: inline-block;
-    margin-right: 20px;
     vertical-align: middle;
+}
+ul.side_ul li {
+  margin-right: 20px;
 }
 .search-form:focus {
     color: #212529;

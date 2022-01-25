@@ -115,17 +115,19 @@ ul.reviews_icon {
     background: transparent;
     color: #fff;
     height: 50px;
-    border: 1px solid #f9db87;
+    border: 1px solid #f5e1be;
 }
 .newsletter_form .submit_btn {
     position: absolute;
-    right: -20px;
-    height: 50px;
+    right: -19px;
+    height: 46px;
     background: linear-gradient(to right, #d2b14e, #b48d36);
     color: #fff;
     border: none;
     text-transform: uppercase;
     padding: 0 50px;
+    top: 12px;
+    border-radius: 0;
 }
 .bj_footer {
     background: #f6f2ef;

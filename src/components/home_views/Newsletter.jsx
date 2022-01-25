@@ -10,7 +10,7 @@ const Newsletter = () => {
             <div className="bj_news_head text-center">
               <img
                 src="https://baladna.belgiumwebnet.com/assets/images/headerimg/news.svg"
-                class="instaimg"
+                className="instaimg"
                 alt="Newsletter Svg"
               ></img>
               <h2 className="title30 text-uppercase font-italic text-white">

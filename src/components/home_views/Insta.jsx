@@ -11,13 +11,13 @@ const Insta = () => {
               <h1 className="text-center text-uppercase">GET A TOUR OF OUR SOCIAL MEDIA</h1>
               <img
                 src="https://baladna.belgiumwebnet.com/assets/images/line.svg"
-                class="line-black"
+                className="line-black"
                 alt="line-black"
               ></img>
             </div>
           </Col>
           <Col md={4} className="no-padding">
-              <div class="imagesection">
+              <div className="imagesection">
                 <a href="javascript:void(0);">
                   <img
                     src="https://baladna.belgiumwebnet.com/assets/images/insta.png"

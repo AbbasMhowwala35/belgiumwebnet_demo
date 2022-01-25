@@ -8,7 +8,9 @@ import Category from './components/home_views/Category';
 import { Testimonial } from './components/home_views/Testimonial';
 import Insta from './components/home_views/Insta';
 import Newsletter from './components/home_views/Newsletter';
-import Footer from './components/slider/footer/Footer';
+import Footer from './components/footer/Footer';
+import About from './components/pages/About';
+import "./assets/css/theme.css";
 
 
 function App() {
