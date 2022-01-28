@@ -4,32 +4,32 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
-import { Link} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import "../../assets/css/header.css";
 
 const header = () => {
   return (
     <Navbar className="bj_header">
       <Container className="custom-container">
-        <Navbar.Brand href="/home">
+        <NavLink to="/">
           <img
             src="https://baladna.belgiumwebnet.com/assets/logo/logo2.png"
             alt="Logo"
             className="logo_img"
           ></img>
-        </Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
           className="bj_navigation justify-content-center"
         >
           <Nav>
-            <Nav.Link to="/home" className="top_menu">Yellow Gold</Nav.Link>
-            <Nav.Link to="#link" className="top_menu">White Gold</Nav.Link>
-            <Nav.Link to="#link" className="top_menu">Diamonds</Nav.Link>
-            <Nav.Link to="#link" className="top_menu">Loose Diamonds</Nav.Link>
-            <Nav.Link to="/about" className="top_menu">About Us</Nav.Link>
-            <Nav.Link to="#link" className="top_menu">Contact Us</Nav.Link>
+            <NavLink to="/" className="top_menu">Yellow Gold</NavLink>
+            <NavLink to="/shop" className="top_menu">White Gold</NavLink>
+            <NavLink to="/shop" className="top_menu">Diamonds</NavLink>
+            <NavLink to="/shop" className="top_menu">Loose Diamonds</NavLink>
+            <NavLink to="/about" className="top_menu">About Us</NavLink>
+            <NavLink to="/contact" className="top_menu">Contact Us</NavLink>
           </Nav>
         </Navbar.Collapse>
         <Form className="d-flex search-form">
@@ -40,7 +40,7 @@ const header = () => {
             aria-label="Search"
           />
           <Button variant="outline-light">
-            <img src="https://baladna.belgiumwebnet.com/assets/images/headerimg/search.svg"></img>
+            <img src="https://baladna.belgiumwebnet.com/assets/images/headerimg/search.svg" alt="Search"></img>
           </Button>
         </Form>
         <ul className="side_ul">
