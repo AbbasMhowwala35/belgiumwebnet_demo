@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hi, I'm Abbas Mhowwala! 👋
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🚀 About Me
 
-### `npm start`
+I like to introduce myself as an experienced Front End Developer (UI Designer), dedicated to nurturing my creative talents and applying them to clients' work. I am passionate about my work and prefer to work as an independent with a passion for creating inspiring and influential designs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I’ve designed the User-Experience and Interfaces for various influential Startups, who are now prospering as prominent Enterprises. I work closely with my Clients to design seamless interactive mobile and web applications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The tools I use are Sketch, Adobe XD, Figma but I do believe in taking a traditional approach at times too and just stick to a paper and a pencil to design wireframes for prototyping. I feel like it's very important to test out the low fidelity mockups before moving on to them later.
 
-### `npm test`
+I am very passionate about design and this is one of the core reasons for my close and emotional relationship with the clients I provide my services and value to.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Along with the design, I am also keen on Front End Development.
 
-### `npm run build`
+My Key expertise includes:
 
-Builds the app for production to the `build` folder.\
+- W3C valid and semantic HTML 5 / CSS3
+- Responsive Sites using media queries and Twitter Bootstrap
+- PHP5 & MySQL
+- jQuery, Ajax
+- Wordpress (Theme and Plugin development)
+- PSD2HTML
+- HTML5
+- CSS3
+- JQuery
+- Responsive Web Design
+
+# Baladna Jewelry LLC.
+
+Baladna Jewelry excel in the field of Diamond industry with an experience of over 20 years. We are established firm providing services to our customers.
+
+## Some Things About Me
+
+👩‍💻 I'm currently working on FrontEnd
+
+🧠 I'm currently learning React.js
+
+📫 How to reach me: Abbasmhowwala35@gmail.com
+
+## Tech Stack
+
+**Client:** React, Redux, React Bootstrap, FakeStore API
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/AbbasMhowwala/belgiumwebnet_demo
+```
+
+Go to the project directory
+
+```bash
+  cd belgiumwebnet_demo
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
+
+```bash
+    npm test
+```
+
+Builds the app for production to the build folder.
+
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about deployment for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+    npm run build
+```
