@@ -30,6 +30,7 @@ const header = () => {
             <NavLink to="/shop" className="top_menu">Loose Diamonds</NavLink>
             <NavLink to="/about" className="top_menu">About Us</NavLink>
             <NavLink to="/contact" className="top_menu">Contact Us</NavLink>
+            {/* <NavLink to="/login" className="top_menu">Login</NavLink> */}
           </Nav>
         </Navbar.Collapse>
         <Form className="d-flex search-form">
@@ -44,32 +45,32 @@ const header = () => {
           </Button>
         </Form>
         <ul className="side_ul">
-          <li class="login-users menu cool_menu1 desktop_menu user_desktop">
+          <li className="login-users menu cool_menu1 desktop_menu user_desktop">
           <Link to="/">
               <img
                 src="https://baladna.belgiumwebnet.com/assets/images/headerimg/user.svg"
                 alt="User"
-                class="top_img"
+                className="top_img"
                 width="20px"
               ></img>
             </Link>
           </li>
-          <li class="menu cool_menu1 desktop_menu">
+          <li className="menu cool_menu1 desktop_menu">
           <Link to="/wishlist">
               <img
                 src="https://baladna.belgiumwebnet.com/assets/images/headerimg/wishlist.svg"
                 alt="Wishlist"
-                class="top_img"
+                className="top_img"
                 width="20px"
               ></img>
               </Link>
           </li>
-          <li class="menu cool_menu1 desktop_menu">
+          <li className="menu cool_menu1 desktop_menu">
           <Link to="/cart">
               <img
                 src="https://baladna.belgiumwebnet.com/assets/images/headerimg/cart.svg"
                 alt="Cart"
-                class="top_img"
+                className="top_img"
                 width="20px"
               ></img>
             </Link>

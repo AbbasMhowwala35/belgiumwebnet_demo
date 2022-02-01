@@ -9,7 +9,8 @@ import "./assets/css/theme.css";
 import Home from "./components/home_views/Home";
 import Contact from "./components/home_views/Contact";
 import Shop from "./components/home_views/Shop";
-
+import Login from "./components/home_views/Login";
+const pageSize = 6;
 function App() {
   return (
     <div>
@@ -19,8 +20,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop" pageSize={pageSize} element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

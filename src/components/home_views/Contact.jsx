@@ -1,20 +1,10 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Form } from "react-bootstrap";
 import Iframe from "react-iframe";
-import { makeStyles } from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-      width: "25ch",
-    },
-  },
-}));
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 const Contact = () => {
-  const classes = useStyles();
   return (
     <div className="bj_contact">
       <div className="wrap-bread-crumb breadcrumb_collection2">
@@ -54,13 +44,39 @@ const Contact = () => {
               </p>
             </div>
             <div className="bj_contact_form">
-              <form className={classes.root} noValidate autoComplete="off">
-              <TextField
-                  id="outlined-basic"
-                  label="Outlined"
-                  variant="outlined"
-                />
-              </form>
+              <Form className="bj_contact_form">
+                <Row>
+                  <Col xs={12}>
+                    <TextField
+                      id="outlined-basic"
+                      label="Fullname"
+                      variant="outlined"
+                      className="w-100 mb-3"
+                    />
+                  </Col>
+                  <Col xs={12}>
+                    <TextField
+                      id="outlined-basic"
+                      label="Email"
+                      variant="outlined"
+                      type="email"
+                      className="w-100 mb-3"
+                    />
+                  </Col>
+                  <Col xs={12}>
+                    <TextField
+                      id="outlined-basic"
+                      label="Phone"
+                      variant="outlined"
+                      type="number"
+                      className="w-100 mb-3"
+                    />
+                  </Col>
+                  <Col xs={12}>
+                    <Button variant="outlined" className="mt-2">Submit</Button>
+                  </Col>
+                </Row>
+              </Form>
             </div>
           </Col>
 
@@ -72,7 +88,7 @@ const Contact = () => {
                 et. Cras mattis consectetur purus sit amet fermentum. Sed
                 posuere est at lobortis.
               </p>
-              <div class="info_find">
+              <div className="info_find">
                 <p>
                   <img
                     src="https://baladna.belgiumwebnet.com/assets/images/headerimg/call.svg"
