@@ -44,6 +44,7 @@ const ProductList = (props) => {
               </li>
             </ul>
           </div>
+          <p className="d-none">{id}</p>
           <h4 className="des-font capital title-product mb-0">
             <Link>{title}</Link>
             <p className="d-none">{id}</p>

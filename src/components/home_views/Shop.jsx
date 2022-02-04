@@ -47,18 +47,12 @@ const Shop = () => {
       </div>
       <Container>
         <Row className="bj_products">
-        {/* <Col md={2}>
-        <br></br>
-        <h2>Categories</h2>
-        <ul>
-          {list}
-          </ul>
-        </Col> */}
         <Col md={12}>
         <Row>
           {products?.map((element) => (
             <div className="col-md-4">
               <ProductList
+                key={element.id}
                 title={element.title ? element.title:"  "}
                 description={element.description ? element.description.slice(0, 88) : ""}
                 image={element.image ? element.image : ""}
