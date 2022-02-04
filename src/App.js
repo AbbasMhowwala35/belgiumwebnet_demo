@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from "./components/footer/Footer";
 import About from "./components/pages/About";
+import RingBuilder from "./components/pages/RingBuilder";
 import "./assets/css/theme.css";
 import Home from "./components/home_views/Home";
 import Contact from "./components/home_views/Contact";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/shop" pageSize={pageSize} element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/ring-builder" element={<RingBuilder />} />
         </Routes>
         <Footer />
       </BrowserRouter>

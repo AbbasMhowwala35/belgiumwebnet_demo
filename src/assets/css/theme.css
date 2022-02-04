@@ -488,3 +488,27 @@ li.categories {
   font-weight: 600;
   font-size: 19px;
 }
+.bj_shpae_padding {
+  padding: 0px 5px;
+}
+.bj_shape_wizard_step-2 {
+  position: relative;
+}
+.bj_shape_wizard_step-2 img
+{
+  width: 100%;
+}
+.bj_shape_wizard_content ul li.bj_setting_details {
+  position: absolute;
+  top: 15px;
+  left: 90px;
+  width: 200px;
+}
+.bj_shape_wizard_content ul li.bj_setting_details h2 {
+  color: rgb(72, 72, 72);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 6px;
+}
