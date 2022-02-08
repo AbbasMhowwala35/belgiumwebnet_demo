@@ -11,6 +11,7 @@ import Home from "./components/home_views/Home";
 import Contact from "./components/home_views/Contact";
 import Shop from "./components/home_views/Shop";
 import Login from "./components/home_views/Login";
+import Diamond from "./components/pages/Diamond";
 const pageSize = 6;
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/ring-builder" element={<RingBuilder />} />
+          <Route path="/diamonds" element={<Diamond />} />
         </Routes>
         <Footer />
       </BrowserRouter>
