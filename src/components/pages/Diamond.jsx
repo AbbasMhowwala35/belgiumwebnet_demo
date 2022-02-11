@@ -5,6 +5,8 @@ import Slider from "@mui/material/Slider";
 import Box from "@mui/material/Box";
 
 const Diamond = () => {
+  const [value, setValue] = React.useState([0, 100]);
+
   const marks = [
     {
       value: 25,
@@ -23,6 +25,55 @@ const Diamond = () => {
       label: "Excellent",
     },
   ];
+  const color = [
+    {
+      value: 10,
+      label: "M",
+    },
+    {
+      value: 20,
+      label: "L",
+    },
+    {
+      value: 30,
+      label: "K",
+    },
+    {
+      value: 40,
+      label: "J",
+    },
+    {
+      value: 50,
+      label: "I",
+    },
+    {
+      value: 60,
+      label: "H",
+    },
+    {
+      value: 70,
+      label: "G",
+    },
+    {
+      value: 80,
+      label: "F",
+    },
+    {
+      value: 90,
+      label: "E",
+    },
+    {
+      value: 100,
+      label: "D",
+    },
+  ];
+  function valuetext(value) {
+    return `${value}°C`;
+  }
+
+  function valueLabelFormat(value) {
+    return marks.findIndex((mark) => mark.value === value) + 1;
+  }
 
   function valuetext(value) {
     return `${value}°C`;
@@ -149,13 +200,61 @@ const Diamond = () => {
                 <h2 title="Diamonds Shape">Cut</h2>
               </Col>
               <Col className="p-0" sm={10} md={10}>
-                <Box sx={{ width: 300 }}>
+                <Box className="cut_filter">
                   <Slider
-                    step={4}
-                    aria-label="Cut Filter"
+                    aria-label="Restricted values"
                     defaultValue={0}
+                    value={value}
+                    valueLabelFormat={valueLabelFormat}
                     getAriaValueText={valuetext}
+                    step={null}
+                    valueLabelDisplay="auto"
                     marks={marks}
+                    color="info"
+                  />
+                </Box>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className="w-100 m-auto bj_diamond_filter_section bj_diamond_filter_section_desktop pr-3">
+          <Col className="pl-md-0 mt-lg-5 mt-md-0 mb-5" md={6} sm={2} xs={12}>
+            <Row className="w-100 m-auto">
+              <Col className="p-0" sm={2} md={2}>
+                <h2 title="Diamonds Shape">Color</h2>
+              </Col>
+              <Col className="p-0" sm={10} md={10}>
+                <Box className="cut_filter">
+                  <Slider
+                    aria-label="Restricted values"
+                    defaultValue={0}
+                    value={value}
+                    valueLabelFormat={valueLabelFormat}
+                    getAriaValueText={valuetext}
+                    marks={color}
+                    color="warning"
+                  />
+                </Box>
+              </Col>
+            </Row>
+          </Col>
+          <Col className="pl-md-0 mt-lg-5 mt-md-0 mb-5" md={6} sm={2} xs={12}>
+            <Row className="w-100 m-auto">
+              <Col className="p-0" sm={2} md={2}>
+                <h2 title="Diamonds Shape">Carat</h2>
+              </Col>
+              <Col className="p-0" sm={10} md={10}>
+                <Box className="cut_filter">
+                  <Slider
+                    aria-label="Restricted values"
+                    defaultValue={0}
+                    value={value}
+                    valueLabelFormat={valueLabelFormat}
+                    getAriaValueText={valuetext}
+                    step={null}
+                    valueLabelDisplay="auto"
+                    marks={marks}
+                    color="info"
                   />
                 </Box>
               </Col>
