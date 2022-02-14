@@ -6,7 +6,40 @@ import Box from "@mui/material/Box";
 
 const Diamond = () => {
   const [value, setValue] = React.useState([0, 100]);
+  const [caratw, setCarat] = React.useState([0, 100]);
+  const [colorw, setColor] = React.useState([0, 100]);
+  const [clarityw, setClarity] = React.useState([0, 100]);
 
+  const handleSliderChange = (event, newValue) => {
+    setValue(newValue);
+  }
+  const handleCaratChange = (event, newValue) => {
+    setCarat(newValue);
+  }
+  const handleColorChange = (event, newValue) => {
+    setColor(newValue);
+  }
+  const handleClarityChange = (event, newValue) => {
+    setClarity(newValue);
+  }
+  const carat = [
+    {
+      value: 25,
+      label: "Fair",
+    },
+    {
+      value: 50,
+      label: "Good",
+    },
+    {
+      value: 75,
+      label: "Very Good",
+    },
+    {
+      value: 100,
+      label: "Excellent",
+    },
+  ];
   const marks = [
     {
       value: 25,
@@ -67,16 +100,54 @@ const Diamond = () => {
       label: "D",
     },
   ];
+  const clarity = [
+    {
+      value: 0,
+      label: "I1",
+    },
+    {
+      value: 11,
+      label: "SI2",
+    },
+    {
+      value: 22,
+      label: "SI1",
+    },
+    {
+      value: 33,
+      label: "VS2",
+    },
+    {
+      value: 44,
+      label: "VS1",
+    },
+    {
+      value: 55,
+      label: "VVS2",
+    },
+    {
+      value: 66,
+      label: "VVS1",
+    },
+    {
+      value: 77,
+      label: "IF",
+    },
+    {
+      value: 88,
+      label: "FL",
+    },
+    {
+      value: 100,
+      label: "D",
+    },
+  ];
   function valuetext(value) {
     return `${value}°C`;
   }
 
   function valueLabelFormat(value) {
     return marks.findIndex((mark) => mark.value === value) + 1;
-  }
-
-  function valuetext(value) {
-    return `${value}°C`;
   }
   return (
     <div className="bj_diamonds">
@@ -205,6 +276,7 @@ const Diamond = () => {
                     aria-label="Restricted values"
                     defaultValue={0}
                     value={value}
+                    onChange={handleSliderChange}
                     valueLabelFormat={valueLabelFormat}
                     getAriaValueText={valuetext}
                     step={null}
@@ -228,11 +300,13 @@ const Diamond = () => {
                   <Slider
                     aria-label="Restricted values"
                     defaultValue={0}
-                    value={value}
+                    value={colorw}
+                    onChange={handleColorChange}
                     valueLabelFormat={valueLabelFormat}
                     getAriaValueText={valuetext}
                     marks={color}
                     color="warning"
+                    step={null}
                   />
                 </Box>
               </Col>
@@ -248,12 +322,60 @@ const Diamond = () => {
                   <Slider
                     aria-label="Restricted values"
                     defaultValue={0}
-                    value={value}
+                    onChange={handleCaratChange}
                     valueLabelFormat={valueLabelFormat}
                     getAriaValueText={valuetext}
+                    value={caratw}
                     step={null}
                     valueLabelDisplay="auto"
-                    marks={marks}
+                    marks={carat}
+                    color="info"
+                  />
+                </Box>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className="w-100 m-auto bj_diamond_filter_section bj_diamond_filter_section_desktop pr-3">
+          <Col className="pl-md-0 mt-lg-5 mt-md-0 mb-5" md={6} sm={2} xs={12}>
+            <Row className="w-100 m-auto">
+              <Col className="p-0" sm={2} md={2}>
+                <h2 title="Diamonds Shape">Clarity</h2>
+              </Col>
+              <Col className="p-0" sm={10} md={10}>
+                <Box className="cut_filter">
+                  <Slider
+                    aria-label="Restricted values"
+                    defaultValue={0}
+                    value={clarityw}
+                    onChange={handleClarityChange}
+                    valueLabelFormat={valueLabelFormat}
+                    getAriaValueText={valuetext}
+                    marks={clarity}
+                    color="primary"
+                    step={null}
+                  />
+                </Box>
+              </Col>
+            </Row>
+          </Col>
+          <Col className="pl-md-0 mt-lg-5 mt-md-0 mb-5" md={6} sm={2} xs={12}>
+            <Row className="w-100 m-auto">
+              <Col className="p-0" sm={2} md={2}>
+                <h2 title="Diamonds Shape">Price</h2>
+              </Col>
+              <Col className="p-0" sm={10} md={10}>
+                <Box className="cut_filter">
+                  <Slider
+                    aria-label="Restricted values"
+                    defaultValue={0}
+                    onChange={handleCaratChange}
+                    valueLabelFormat={valueLabelFormat}
+                    getAriaValueText={valuetext}
+                    value={caratw}
+                    step={null}
+                    valueLabelDisplay="auto"
+                    marks={carat}
                     color="info"
                   />
                 </Box>
