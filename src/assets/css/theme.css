@@ -630,3 +630,18 @@ li.longFilter--VqAB5.item--YBPgi span img {
 #engagement-menu .dropdown-menu.show {
   width: 270px;
 }
+p.MuiTypography-root.MuiTypography-body1.css-1pnmrwp-MuiTypography-root {
+  background: #e2e2e2;
+  padding: 3px 8px;
+  color: #000;
+}
+.price-input-1 {
+  display: inline-flex;
+  width: 30%;
+  margin-right: auto;
+}
+.price-input-2 {
+  display: inline-flex;
+  width: 30%;
+  margin-right: auto;
+}

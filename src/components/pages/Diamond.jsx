@@ -1,27 +1,48 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import RingBuilder from "./RingBuilder";
 import Slider from "@mui/material/Slider";
 import Box from "@mui/material/Box";
+import { Input, InputAdornment } from "@mui/material";
+import axios from "axios";
+import DiamondList from "../Listitems/DiamondList";
 
-const Diamond = () => {
+const Diamond = (props) => {
+  // const [diamond, setDiamond] = React.useState();
+  // useEffect(() => {
+  //   axios
+  //     .post(
+  //       "https://malaknew.belgiumwebnet.com/webapi/api/diamond/diamond_list?length=50"
+  //     )
+  //     .then((response) => {
+  //       setDiamond(response.data.data.result);
+  //     });
+  // }, []);
+  // console.log(diamond);
   const [value, setValue] = React.useState([0, 100]);
   const [caratw, setCarat] = React.useState([0, 100]);
   const [colorw, setColor] = React.useState([0, 100]);
   const [clarityw, setClarity] = React.useState([0, 100]);
-
   const handleSliderChange = (event, newValue) => {
     setValue(newValue);
-  }
+  };
   const handleCaratChange = (event, newValue) => {
     setCarat(newValue);
-  }
+  };
   const handleColorChange = (event, newValue) => {
     setColor(newValue);
-  }
+  };
   const handleClarityChange = (event, newValue) => {
     setClarity(newValue);
-  }
+  };
+  const [startPrice, setStartPrice] = React.useState(0);
+  const [endPrice, setEndPrice] = React.useState(10000000);
+
+  const handleChange = (event, value) => {
+    setStartPrice(value[0]);
+    setEndPrice(value[1]);
+  };
   const carat = [
     {
       value: 25,
@@ -38,6 +59,16 @@ const Diamond = () => {
     {
       value: 100,
       label: "Excellent",
+    },
+  ];
+  const price = [
+    {
+      value: 0,
+      label: "",
+    },
+    {
+      value: 100,
+      label: "",
     },
   ];
   const marks = [
@@ -367,20 +398,61 @@ const Diamond = () => {
               <Col className="p-0" sm={10} md={10}>
                 <Box className="cut_filter">
                   <Slider
-                    aria-label="Restricted values"
-                    defaultValue={0}
-                    onChange={handleCaratChange}
-                    valueLabelFormat={valueLabelFormat}
-                    getAriaValueText={valuetext}
-                    value={caratw}
-                    step={null}
-                    valueLabelDisplay="auto"
-                    marks={carat}
-                    color="info"
+                    getAriaLabel={(index) =>
+                      index === 0 ? "Minimum price" : "Maximum price"
+                    }
+                    min={100}
+                    max={100000000}
+                    defaultValue={[startPrice, endPrice]}
+                    onChangeCommitted={handleChange}
+                    onChange={handleChange}
+                    step={100}
                   />
                 </Box>
+                <Input
+                  value={startPrice}
+                  className="price-input price-input-1"
+                  startAdornment={
+                    <InputAdornment position="start">$</InputAdornment>
+                  }
+                />
+                <Input
+                  value={endPrice}
+                  className="price-input price-input-2"
+                  startAdornment={
+                    <InputAdornment position="start">$</InputAdornment>
+                  }
+                />
               </Col>
             </Row>
+          </Col>
+        </Row>
+        <br />
+        <Row>
+          <Col md={8} className="m-auto text-center">
+            <h1>Find Diamonds Easily</h1>
+            <p>
+              The Diamond Search Feature helps you deploy various filters to
+              help you find exactly what you're looking for.
+            </p>
+            <p>All diamonds are ethically mined and certified.</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12}>
+            {/* {diamond?.map((element) => (
+              <div className="col-md-4" key={element.url}>
+                <DiamondList
+                  shape={element.shape ? element.title: ""}
+                  carat={element.carat ? element.carat: ""}
+                  color={element.color ? element.color: ""}
+                  clarity={element.clarity ? element.clarity: ""}
+                  cut={element.cut ? element.cut: ""}
+                  lab={element.lab ? element.lab: ""}
+                  price={element.price ? element.price: ""}
+                />
+              </div>
+            ))} */}
           </Col>
         </Row>
       </Container>

@@ -21,16 +21,16 @@ const About = () => {
         <Row className="aboutus-pages">
           <Col md={6} className="intro_image">
             <img
-              class="w-100"
+              className="w-100"
               src=" //cdn.shopify.com/s/files/1/0474/3168/0162/files/people1.jpg?v=1598951812"
               alt="About"
             ></img>
           </Col>
           <Col md={6} className="intro_detail d-flex align-items-center">
-            <div class="info-intro">
-              <p class="des_intro">Photographer</p>
-              <h3 class="title_intro">Justin Lisiakir</h3>
-              <p class="content_intro">
+            <div className="info-intro">
+              <p className="des_intro">Photographer</p>
+              <h3 className="title_intro">Justin Lisiakir</h3>
+              <p className="content_intro">
                 We believe in a world where you have total freedom to be you,
                 without judgement. To experiment. To express yourself. To be
                 brave and grab life as the extraordinary adventure it is. So we
@@ -43,11 +43,11 @@ const About = () => {
           </Col>
           {/* //Section 2 */}
           <Col md={6} className="intro_detail d-flex align-items-center">
-            <div class="info-intro">
-              <p class="des_intro">Marketing Staff</p>
-              <h3 class="title_intro">Angelika Hessas</h3>
+            <div className="info-intro">
+              <p className="des_intro">Marketing Staff</p>
+              <h3 className="title_intro">Angelika Hessas</h3>
 
-              <p class="content_intro">
+              <p className="content_intro">
                 We believe in a world where you have total freedom to be you,
                 without judgement. To experiment. To express yourself. To be
                 brave and grab life as the extraordinary adventure it is. So we
@@ -60,7 +60,7 @@ const About = () => {
           </Col>
           <Col md={6} className="intro_image">
             <img
-              class="w-100"
+              className="w-100"
               src="//cdn.shopify.com/s/files/1/0474/3168/0162/files/people4.jpg?v=1598951812 "
               alt="About"
             ></img>
@@ -71,20 +71,20 @@ const About = () => {
         <Container>
           <Row>
             <Col md={4} className="box-service justify-content-center">
-              <h4 class="title">24/7 FRIENDLY SUPPORT</h4>
-              <p class="content">
+              <h4 className="title">24/7 FRIENDLY SUPPORT</h4>
+              <p className="content">
                 Our support team always ready for you to 7 days a week
               </p>
             </Col>
             <Col md={4} className="box-service justify-content-center">
-              <h4 class="title">7 DAYS EASY RETURN</h4>
-              <p class="content">
+              <h4 className="title">7 DAYS EASY RETURN</h4>
+              <p className="content">
                 Product any fault within 7 days for an immediately exchange.
               </p>
             </Col>
             <Col md={4} className="box-service justify-content-center">
-              <h4 class="title">QUALITY GUARANTEED</h4>
-              <p class="content">
+              <h4 className="title">QUALITY GUARANTEED</h4>
+              <p className="content">
                 If your product aren't perfect, return them for a full refund
               </p>
             </Col>
